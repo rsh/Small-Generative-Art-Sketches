@@ -1,3 +1,10 @@
+/*
+Rayhan Hasan, 2011
+http://rayhanhasan.com/
+
+Written in Processing.
+*/
+
 int WIDTH = 600;
 int numCrescentsPerSide=5;
 int numPixelsPerColumn= WIDTH/numCrescentsPerSide;
