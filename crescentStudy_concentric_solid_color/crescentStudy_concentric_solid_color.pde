@@ -84,10 +84,7 @@ int rescale(int val, int oldMin, int oldMax, int newMin, int newMax) {
   int oldDifference = oldMax - oldMin;
   int valOldDifference = val-oldMin;
   
-  //println("val " + valOldDifference);
-  
   float ratio = (float)valOldDifference / (float)oldDifference;
-  //println("ratio " + ratio);
   
   int newDifference = newMax - newMin;
   float newVal = (newDifference * ratio)+newMin;
