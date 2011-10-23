@@ -1,5 +1,5 @@
-int WIDTH = 600;
-int numCrescentsPerSide=7;
+int WIDTH = 800;
+int numCrescentsPerSide=5;
 int numPixelsPerColumn= WIDTH/numCrescentsPerSide;
 int numConcentricCircles=19;
 
@@ -21,6 +21,9 @@ void draw () {
     int y = j*numPixelsPerColumn-numPixelsPerColumn/2;
     int size = (int)(numPixelsPerColumn/numConcentricCircles*.8);
     
+    fill(255);
+    ellipse(x, y, (numPixelsPerColumn*0.85), (numPixelsPerColumn*0.85) );
+    
     for(int k=numConcentricCircles; k>=1;k--) {
       drawCrescentOrbiters(x, y, k*size, (j+i)*10, 0, k*1.2);
     }
@@ -35,10 +38,10 @@ void draw () {
 void drawCrescentOrbiters(int x, int y, int cSize, int startingOffset, int differenceOffset, float speed) {
 
   fill(255);
-  drawOrbitingCircle(x, y, cSize+cSize/9, 4, speed, startingOffset);
+  drawOrbitingCircle(x, y, cSize+10, 4, speed, startingOffset);
   
   fill(0);
-  drawOrbitingCircle(x, y, cSize+2, 2, speed, startingOffset+differenceOffset);
+  drawOrbitingCircle(x, y, cSize+9, 2, speed, startingOffset+differenceOffset);
 }
 
 void drawOrbitingCircle(int x, int y, int cSize,  int distance, float speed, int offset) {
