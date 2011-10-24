@@ -1,8 +1,11 @@
 /*
-Rayhan Hasan, 2011
-http://rayhanhasan.com/
+2011-10-24: Rayhan Hasan
+            http://rayhanhasan.com/
+            
 
 Written in Processing.
+Given to you under the MIT License.
+
 */
 
 int WIDTH = 800;
